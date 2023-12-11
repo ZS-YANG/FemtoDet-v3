@@ -13,7 +13,7 @@ paper:[Femtodet: an object detection baseline for energy versus performance trad
 
 - [ ] 发布在VOC0712数据集上的训练结果
 - [ ] 对代码进行进一步重构解耦
-- [ ] 更新集教程文档
+- [ ] 更新教程文档
 - [ ] 精度对齐(使用[femtodet_0stage_yolox.py](configs%2FfemtoDet%2Ffemtodet_0stage_yolox.py)
   的训练结果比[femtodet_0stage.py](configs%2FfemtoDet%2Ffemtodet_0stage.py)高很多，需要找到原因)
 
