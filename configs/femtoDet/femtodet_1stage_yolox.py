@@ -26,7 +26,7 @@ model = dict(
         batch_augments=[
             dict(
                 type='BatchSyncRandomResize',
-                random_size_range=(480, 800),
+                random_size_range=(320, 640),
                 size_divisor=32,
                 interval=10)
         ]),
@@ -186,7 +186,7 @@ test_evaluator = val_evaluator
 
 # training settings
 max_epochs = 300
-num_last_epochs = 15
+num_last_epochs = 0
 interval = 10
 
 train_cfg = dict(max_epochs=max_epochs, val_interval=interval)
@@ -221,14 +221,14 @@ param_scheduler = [
         end=max_epochs - num_last_epochs,
         by_epoch=True,
         convert_to_iter_based=True),
-    dict(
-        # use fixed lr during last 15 epochs
-        type='ConstantLR',
-        by_epoch=True,
-        factor=1,
-        begin=max_epochs - num_last_epochs,
-        end=max_epochs,
-    )
+    # dict(
+    #     # use fixed lr during last 15 epochs
+    #     type='ConstantLR',
+    #     by_epoch=True,
+    #     factor=1,
+    #     begin=max_epochs - num_last_epochs,
+    #     end=max_epochs,
+    # )
 ]
 
 default_hooks = dict(
