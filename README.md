@@ -1,5 +1,3 @@
-下面是完善后的 README，统一了中英文表达、目录结构、安装步骤、数据准备说明和结果展示格式，并修复了部分 Markdown 链接及拼写问题。
-
 # FemtoDet-v3
 
 基于 MMDetection 3.x 重构的 [FemtoDet](https://github.com/yh-pengtu/FemtoDet) 非官方实现。
